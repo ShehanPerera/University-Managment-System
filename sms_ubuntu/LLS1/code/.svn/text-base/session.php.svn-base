@@ -1,0 +1,46 @@
+<?php
+require_once 'databaseconnection.php';
+$code=$_POST['code'];
+$name=$_POST['name'];
+$year=$_POST['year'];
+$count=$_POST['count'];
+if(isset($_POST['insert']))
+{	
+	$result=mysql_query("SELECT * FROM session where Session_Code='$code'");
+	if(!$result)
+	{
+		$sql=mysql_query("INSERT INTO session values('$code','$name','$year','$count')");
+		if (!$sql)
+		{
+			die('Error: ' . mysql_error());
+		}
+		header("Location:./../SessionTable.php?lls=Your session details successfully inserted check your details below!");
+	}
+	else
+		header("Location:./../SessionTable.php?lls=This session details already inserted check details below!");
+}
+elseif(isset($_POST['delete']))
+{
+	$sql=mysql_query("DELETE FROM session WHERE Session_Code='$code'");
+	if (!$sql)
+	{
+		die('Error: ' . mysql_error());
+	}
+	header("Location:./../SessionTable.php?lls=Your session details successfully deleted check your details below!");
+}
+elseif(isset($_POST['update']))
+{
+	$sql=mysql_query("UPDATE session set Session_Name='$name',Level='$year',Head_Count='$count' WHERE Session_Code='$code'");
+	if (!$sql)
+	{
+		die('Error: ' . mysql_error());
+	}
+	header("Location:./../SessionTable.php?lls=Your session details successfully updated check your details below!");
+}
+elseif(isset($_POST['search']))
+{
+	$code=$_POST['code'];
+	header("Location:./../SessionDetails.php?lls=$code");
+}    
+?>
+     

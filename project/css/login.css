@@ -1,0 +1,16 @@
+body {
+font-family: Arial, Verdana, sans-serif; background-image:url("images/bg1.jpg")}
+fieldset { border:1px solid white }
+
+legend {
+  padding: 0.9em 0.9em;
+  border:1px solid white;
+  color:#040f7c;
+  font-size:75%;
+  text-align:center;
+  }
+h1, h2 {color: #040f7c; font-size:200%;}
+h3{color :#0b095d;}
+h4{color: #040f7d}
+p {
+color: #665544;} 

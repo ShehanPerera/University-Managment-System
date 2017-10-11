@@ -1,0 +1,114 @@
+<!-- session -->
+<?php
+  include("../../lib/session.php");
+  if(!isset($ses_conform))
+  {
+    header('Location: ../../index.php');
+  }
+ ?>
+ <!-- Page Start -->
+<!--Student New-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Student Details</title>
+	<link rel="stylesheet" href="../../css/bootstrap.min.css">
+  <script src="../../js/jquery-3.1.1.min.js"></script>
+  <script src="../../js/bootstrap.min.js"></script>
+
+  <script type="text/javascript">
+  function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $('#pro_pic')
+                        .attr('src', e.target.result)
+                        // .width(150)
+                        // .height(200);
+                };
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+</script>
+
+
+  <style>
+  .container{
+
+  }
+  .winHeight{
+    height: 95vh;
+  }
+  .frame{
+	  border-color:#3329E7;
+	  border-radius:25px;
+	  border-style:solid;
+  }
+  th, td{
+	  padding:3px;
+  }
+  .formnew{
+    height:400px;
+    overflow:auto;
+  }
+  </style>
+
+<?php include('../../lib/STD_Con.php');?>
+<!-- Scripts -->
+<script type="text/javascript">
+// Function to get form
+  function loadForm() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+     document.getElementById("HiddenCnt").innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("GET", "../../lib/LOG_newForm.php?key="+key, true);
+  xhttp.send();
+}
+  // Function to make save enable
+  <script>
+// Function to get form
+  // function  fixBtn(key) {
+  //   var xhttp = new XMLHttpRequest();
+  //   xhttp.onreadystatechange = function() {
+  //   if (this.readyState == 4 && this.status == 200) {
+  //     var res = this.responseText;
+  //     document.getElementById("HiddenCnt").innerHTML = res;
+  //     }
+  //   };
+  //    xhttp.open("GET", "../../lib/LOG_Basic.php?key="+key, true);
+  //    xhttp.send();
+  // }
+  // document.getElementById("Button").disabled = true;
+</script>
+</head>
+
+<body>
+	<div class="col-lg-12 winHeight">
+        <form action="..\..\lib\STD_New.php" method="POST" enctype="multipart/form-data">
+        <div class="formnew">
+        <!-- reg no first -->
+        <div class="form-inline">
+          <label for="regNo">Reg No </label> <input type="text" name="regNo" id="regNo" class="form-control" onkeyup="loadForm(this.value)">
+          <button class="btn btn-primary form-control" type="button" onclick="loadForm(document.getElementById('regNo').value)">Go</button>            
+          </div>
+          <div id="HiddenCnt">
+          </div>
+        </div>
+            <!-- Buttons -->
+            <div class="col-sm-3"></div>
+            <div class="col-sm-3">
+            <button type="submit" class="btn btn-success btn-block" disabled="disable"><i class="glyphicon glyphicon-floppy-save"></i>&nbsp;Save</button>
+            </div>
+            <div class="col-sm-3"> <a href="index.php" class="btn btn-danger btn-block"><i class="glyphicon glyphicon-circle-arrow-left"></i> &nbsp;Discard</a>
+            </div>
+            <div class="col-sm-3"></div>
+        </form>
+        </div>
+</body>
+</html>

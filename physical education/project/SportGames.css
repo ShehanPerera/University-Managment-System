@@ -1,0 +1,91 @@
+.table
+{
+	width:95%;
+    height:520px;
+	background-color: #e9ebee;
+	margin: 0 auto;
+	margin-top: 5px;
+	padding-top:10px;
+	padding-left: 40px;
+	border-radius: 15px;
+	-webkit-border-radius:15px;
+	-o-border-radius:15px;
+	-moz-border-radius:15px;
+	color: #000;
+	font-weight: bolder;
+	font-size: 20px;
+}
+
+
+
+
+.button
+{
+	width: 100px;
+	height: 70px;
+	border: 0;
+	border-radius: 5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	-o-border-radius:5px;
+	background-color: #adadad;
+	font-weight: bolder;
+	
+}
+.button:hover
+{
+	background-color:#adadad;
+	color: #2d61c9;
+}
+
+td
+{
+	width: 50px;
+	height: 70px;
+	padding-left: 50px;	
+	padding-top: 0px;
+	margin-left: 50px;
+	margin-top: 5px
+}
+table
+{
+	padding-left: 190px;
+	margin-left: 5px;
+}
+.desibutton
+{
+	width: 400px;
+	height: 35px;
+	border: 0;
+	border-radius: 5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	-o-border-radius:5px;
+	background-color: rgb(105, 99, 105);
+	font-weight: bolder;
+	margin-top: 50px;
+	color: white;
+}
+.desibutton:hover
+{
+	background-color: rgb(56, 53, 56);
+	color: white;
+}
+.button12
+{
+	width: 100px;
+	height: 70px;
+	border: 0;
+	border-radius: 5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	-o-border-radius:5px;
+	background-color: #e9ebee;
+	font-weight: bolder;
+	
+}
+.button12:hover
+{
+	background-color: #e9ebee;
+	color: #2d61c9;
+}

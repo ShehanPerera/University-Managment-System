@@ -1,0 +1,6 @@
+Folder PATH listing
+Volume serial number is 4876-FBE1
+C:\XAMPP\HTDOCS\HOSTEL\-
+Invalid path - \XAMPP\HTDOCS\HOSTEL\-
+No subfolders exist 
+

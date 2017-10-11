@@ -1,0 +1,233 @@
+body,div,p,ul,li 
+{
+    
+    padding:0;
+    margin:0;
+    font-family:Arial, Helvetica , Sans-Serif;
+    font-size:12px;
+
+}
+body
+{
+    background-color:rgb(237,237,237);
+    font-family:"Arial", Helvetica , Sans-Serif;
+     font-size:12px;
+    }
+.clear
+{
+    clear:both
+ }
+ .wap
+ {
+    width:1800px;
+    margin:auto;
+    background-color: #e9ebee;  
+     }
+.contain
+{
+    width:100%;
+    min-height: 585px; 
+    }
+.menu
+{
+    background-color:#3f5c9a;
+    width:100%;
+    margin:0px 0px 10px;
+    padding:0px;
+    height:40px;
+    color:rgb(243,243,243);
+    border-radius:5px 5px 5px 5px;
+    }
+    
+ .footer
+ {
+     height:30px;
+     background-color:#3f5c9a;
+     color:rgb(255,255,255);
+     border-radius:5px 5px 5px 5px;
+     
+     }
+     
+.footer h3
+{
+    font-family:"Segoe UI",Arial,sans-serif;
+    font-size:16px;
+    font-weight:inherit;
+    font-weight:400;margin:10px 0;
+    padding:5px;
+    text-align:center;
+    }
+    
+ .navigation_first_item
+ {
+     border-left:0px;
+     border-radius:5px 0 0 5px;
+     }
+     
+.navitems
+{
+    float:left;
+    border-right:1px solid #adadad;
+    border-left:1px solid #adadad;
+    height:40px;
+    background-color:#3f5c9a;
+    
+    }
+    
+ .menu ul li
+ {
+     float:left;
+     display:block;
+     list-style:none;
+     border-right:1px solid #3f5c9a;
+     border-left:1px solid #3f5c9a;
+     
+     }
+     
+ .menu ul li.navigation_first_item:hover
+ {
+      border-radius:5px 5px 5px 5px;
+     
+     }
+     
+ .menu ul li a 
+ {
+     font-size:13px;
+     font-weight:bold;
+     line-height:40px;
+     padding:8px 20px;
+     color:rgb(255,255,255);
+     text-decoration:none;
+     }
+   .menu ul li:hover
+   {
+       background-color:#3f5c9a;
+       border-right:1px solid #3f5c9a;
+       
+       }
+       
+       .menu ul
+  {
+      
+      }
+      
+  .logo
+  {
+      width:33%;
+      height:100px;
+      clear: both;
+      background-color: white;
+      }
+      
+.logout
+{
+ width:100%;
+ height:45px;
+ float:right;
+ background-color: #3f5c9a;
+
+            margin: 0 auto;
+            margin-top: 5px;
+            padding-top:5px;
+            padding-left: 0px;
+            border-radius: 5px;
+            -webkit-border-radius:5px;
+            -o-border-radius:5px;
+            -moz-border-radius:5px;
+            color: white;
+            font-weight: bolder;
+            
+            font-size: 20px;
+ 
+    }
+.logoutin
+{
+    float:right;
+    clear:both;
+    }
+    
+.bunlogout
+{
+     display:block;
+     list-style:none;
+     font-size:13px;
+     font-weight:bold;
+     border-right:1px solid rgb(10,85,125);
+     border-left:1px solid rgb(67,153,200);
+     background-color:rgb(10,110,178);
+     color:rgb(255,255,255);
+    }
+    .photo
+    {
+        width:100%;
+        hight:550px;
+        }
+    
+    
+        .data
+        {
+            float:right;
+            width:100%;
+            height:525px;
+            background-color: #e9ebee;
+            margin: 0 auto;
+            margin-top: 5px;
+            padding-top:5px;
+            padding-left: 0px;
+            border-radius: 15px;
+            -webkit-border-radius:15px;
+            -o-border-radius:15px;
+            -moz-border-radius:15px;
+            color: white;
+            font-weight: bolder;
+            
+            }
+.buttonlogout
+{
+    border: 0;
+    border-radius: 5px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    -o-border-radius:5px;
+    background-color: skyblue;
+    font-weight: bolder;
+}
+th
+{
+    width:0 auto;
+    background-color: #3f5c9a;
+   padding-left: 30px;
+}
+td
+{
+    width: 0 auto;
+    background-color: #3f5c9a;
+    color:white;
+}
+.button
+{
+    width: 100px;
+    height: 35px;
+    border: 0;
+    border-radius: 5px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    -o-border-radius:5px;
+    background-color: #e9ebee;
+    font-weight: bolder;
+    
+}
+.button:hover
+{
+    background-color: #e9ebee;
+    color: white;
+}
+.logoutlink
+{
+    float:right;
+    border-right:1px solid #47639f;
+    border-left:1px solid #47639f;
+    height:40px;
+    background-color:#47639f;
+
+}

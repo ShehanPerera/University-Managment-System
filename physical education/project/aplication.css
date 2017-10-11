@@ -1,0 +1,99 @@
+.table
+{
+	width:95%;
+    height:520px;
+	background-color: #e9ebee;
+	margin: 0 auto;
+	margin-top: 5px;
+	padding-top:10px;
+	padding-left: 40px;
+	border-radius: 15px;
+	-webkit-border-radius:15px;
+	-o-border-radius:15px;
+	-moz-border-radius:15px;
+	color: #000;
+	font-weight: bolder;
+	font-size: 20px;
+}
+
+
+
+
+.buttonl
+{
+	width: 100px;
+	height: 50px;
+	border: 0;
+	border-radius: 5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	-o-border-radius:5px;
+	background-color: #e9ebee;
+	font-weight: bolder;
+	float: left;
+}
+
+label
+{
+	width: 200px;
+	height: 35px;
+	padding-left: 5px;
+	border: 0;
+	border-radius: 5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	-o-border-radius:5px;
+}
+ input[type="text"]
+{
+	width: 500px;
+	height: 35px;
+	padding-left: 5px;
+	border: 0;
+	border-radius: 5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	-o-border-radius:5px;
+
+}
+input[type="password"]
+{
+	width: 500px;
+	height: 35px;
+	padding-left: 5px;
+	border: 0;
+	border-radius: 5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	-o-border-radius:5px;
+
+}
+.buttonl:hover
+{
+	background-color: #e9ebee;
+	color: red;
+}
+
+input[type="email"]
+{
+	width: 500px;
+	height: 35px;
+	padding-left: 5px;
+	border: 0;
+	border-radius: 5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	-o-border-radius:5px;
+
+}
+select
+{
+	width: 500px;
+	height: 35px;
+	padding-left: 5px;
+	border: 0;
+	border-radius: 5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	-o-border-radius:5px;
+}

@@ -1,0 +1,3 @@
+Data bases are connected with the system from folowing files;
+	1. HMS/lib/STD_Con.php
+	2. HMS/lib/session.php

@@ -1,0 +1,30 @@
+.table1
+{
+	width:95%;
+    height:131px;
+	background-color: #e9ebee;
+	margin: 0 auto;
+	margin-top: 5px;
+	padding-top:10px;
+	padding-left: 40px;
+	border-radius: 15px;
+	-webkit-border-radius:15px;
+	-o-border-radius:15px;
+	-moz-border-radius:15px;
+	color: black;
+	font-weight: bolder;
+	font-size: 20px;
+}
+.button1
+{
+	width: 230px;
+	height: 35px;
+	border: 0;
+	border-radius: 5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	-o-border-radius:5px;
+	background-color: skyblue;
+	font-weight: bolder;
+	
+}

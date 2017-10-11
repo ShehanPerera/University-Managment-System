@@ -1,0 +1,236 @@
+body {
+	text-align:center;
+	
+}
+#imagetable {
+	font-family: verdana,arial,sans-serif;
+	font-size:13px;
+	width:380px;
+	height:250px;
+	color:#000000;
+	border-width: 5px;
+	border-color: #003399;
+	border-collapse: collapse;
+	overflow:auto;
+	
+}
+#imagetable th {
+	background:#b5cfd2 url('images/cell-blue.jpg');
+	border-width: 5px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #003399;
+	color:#000000;
+}
+#imagetable td {
+	background:#dcddc0 url('images/cell-grey.jpg');
+	border-width: 5px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #003399;
+	color:#000666;
+}
+#imagetable1 {
+	font-family: verdana,arial,sans-serif;
+	font-size:13px;
+	color:#000000;
+	border-width: 5px;
+	border-color: #003399;
+	border-collapse: collapse;
+}
+#imagetable1 th {
+	background:#b5cfd2 url('images/cell-blue.jpg');
+	border-width: 5px;
+	padding: 4px;
+	width:50px;
+	border-style: solid;
+	border-color: #003399;
+	color:#000000;
+}
+#imagetable1 td {
+	background:#dcddc0 url('images/cell-grey1.jpg');
+	border-width: 5px;
+	padding: 1px;
+	width:120px;
+	border-style: solid;
+	border-color: #003399;
+	color:#000666;
+}
+#imagetablesearch {
+	font-family: verdana,arial,sans-serif;
+	font-size:13px;
+	color:#000000;
+	border-width: 5px;
+	border-color: #003399;
+	border-collapse: collapse;
+	overflow:auto;
+	height:100px;
+	width:120px;
+}
+#imagetablesearch th {
+	background:#b5cfd2 url('images/cell-blue.jpg');
+	border-width: 5px;
+	padding: 4px;
+	width:50px;
+	border-style: solid;
+	border-color: #003399;
+	color:#000000;
+}
+#imagetablesearch td {
+	background:#dcddc0 url('images/cell-grey1.jpg');
+	border-width: 5px;
+	padding: 1px;
+	width:120px;
+	border-style: solid;
+	border-color: #003399;
+	color:#000666;
+}
+.button_01 a {
+	display: block;
+	width: 120px;
+	height: 21px;
+	padding: 5px 0 0 0;
+	background: url(images/templatemo_button_01.jpg) no-repeat;
+	
+	color: #000000;
+	font-size: 11px;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+}
+.button_02 a {
+	display: block;
+	width: 110px;
+	margin-left:2.5%;
+	height: 12px;
+	padding: 5px 0 0 0;
+	background: url(images/templatemo_button_01.jpg) no-repeat;
+	
+	
+	color: #000000;
+	font-size: 11px;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+}
+a {
+	text-decoration:none;
+	color:#FFFFFF
+}
+a:hover {
+	text-decoration: underline;
+	color:#0033cc;
+}
+#wrap {
+	width:800px;
+	text-align:left;
+	margin:0 auto;
+}
+.float-l {
+	float:left
+}
+.folat-r {
+	float:right
+}
+.clearfix {
+	clear:both
+}
+/* header */
+#header {
+	height:181px;
+	background:url(images/hd.gif);
+	position:relative
+}
+#nav {
+	position:absolute;
+	top:112px;
+	right:34px
+}
+ul#nav {
+}
+ul#nav li {
+	display:inline;
+}
+ul#nav a {
+	color:#0033cc;
+	line-height:43px;
+	padding:0 5px;
+	border-right:#0033cc 1px solid;
+}
+ul#nav .last a {
+	border:none
+}
+#logo {
+	position:absolute;
+	top:10px;
+	left:60px
+}
+#logo h1 {
+	display:inline
+}
+#logo h1 {
+	font-size:35px;
+	color:#000099;
+}
+#logo span {
+	font-size:16px;
+}
+/* content */
+#content {
+	height:880px;
+	background:#000
+}
+#content .left {
+	width:400px;
+	padding:0 50px;
+	color:#FFFFFF
+}
+#content .left h2 {
+	color:#709fc5;
+	font-size:34px;
+	padding:20px 0
+}
+#content .left img {
+	padding-right:20px
+}
+#content .left a {
+	color:#b7d2e3
+}
+#content .right {
+	width:300px;
+}
+#top, #bm {
+	width:173px;
+	color:#ffffff;
+	margin:0 auto;
+	margin-top:30px;
+	padding:0 35px
+}
+#side h2 {
+	font-size:24px;
+	color:#709fc5;
+	padding:20px 0 13px 0
+}
+#side li {
+	line-height:20px
+}
+/* footer */
+
+#footer {
+	clear:both;
+	background: url(images/footer.gif);
+	height:170px;
+	color: #00cccc;
+	position:relative;
+}
+.ft {
+	position: absolute;
+	color:#0099FF;
+	top:100px;
+	left:50px
+}
+#xhtml {
+	position: absolute;
+	top:130px;
+	left:550px
+}

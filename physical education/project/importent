@@ -1,0 +1,45 @@
+print"<a href='login.html'>Login</a>";
+
+
+
+
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <script type="text/javascript">
+            function function1 () {
+                    window.location = "login.html";
+                }   
+
+        </script>
+    </head>
+    <title>Calender</title>
+    <body>
+        <div class="wap">
+            <div class="logo">
+                <img src="photos/Untitled.png">
+
+            </div>
+            <div class="clear"></div>
+            <div class="menu">
+                <ul>
+                    <li class="navigation_first_item"><a href="Home1.html">Home</a></li>
+                    
+                    <li><a href="SportGames.html">Sport Games</a></li>
+                    <li><a href="Events.html">Event</a></li>
+                    <li><a href="Awards.html">Awards</a></li>
+                    <li><a href="Calender.html">Calender</a></li>
+                </ul>
+            </div>
+            <div class="contain">
+                <button class="logout" id="logout" onclick="function1()"> Logout </button>
+                <div class="data"></div>
+                <div class="calender"></div>
+            </div>
+            <div class="footer">
+                <h3>University Of JAffna</h3>
+            </div>
+        </div>
+    </body>
+</html>
