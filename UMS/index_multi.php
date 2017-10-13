@@ -9,7 +9,6 @@ if((!isset($_SESSION['Loged_User'])))
 $utype1=$_SESSION['usertype3'];
  $utype2=$_SESSION['usertype1'];
  $utype3=$_SESSION['usertype2'];
-
 ?>
 <html lang="en">
 <head>
@@ -143,12 +142,7 @@ $utype1=$_SESSION['usertype3'];
 					<?php
 					}
 					?> 
-					 <li class="">
-												<a href="help.pdf">
-													<i class="glyphicon glyphicon-question-sign"></i>
-													<p>Help</p>
-												</a>
-											</li>
+					
 											<li>
                         <a href="http://www.jfn.ac.lk/">
                             <i class="ti-view-list-alt"></i>
@@ -163,33 +157,30 @@ $utype1=$_SESSION['usertype3'];
 		<div class="main-panel">
             <nav class="navbar navbar-default">
                 <div class="container-fluid">
-						<!-- topbar starts -->
-								<button type="button" class="navbar-toggle pull-left animated flip">
-									<span class="sr-only">Toggle navigation</span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-								</button>
-								<div class="pull-left">
-							<h4>University Management System</h4>
-						</div>
-
-								<!-- user dropdown starts -->
-								<div class="btn-group pull-right">
-							<button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-								<?php echo '<img height="30px" width="25px" src="data:image;base64,'.$_SESSION['image'].'" id="pro_pic"/></td>'; ?><span class="hidden-sm hidden-xs"> <?php echo "$utype3." ;echo " $utype1" ;echo " $utype2"; ?></span>
-								<span class="caret"></span>
-							</button>
-							<ul class="dropdown-menu">
-								<li><a href="../user/editpage.php"><i class="glyphicon glyphicon-file"> Profile</i></a></li>
-								<li class="divider"></li>
-								<li><a href="../Hostel/HMS/lib/logout.php"><i class="glyphicon glyphicon-off"> Logout</i></a></li>
-							</ul>
-						</div>
-								<!-- user dropdown ends -->
-
-								
-						<!-- topbar ends -->
+					<!-- topbar starts -->
+					<button type="button" class="navbar-toggle pull-left animated flip">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<div class="pull-left">
+						<h4>University Management System</h4>
+					</div>
+					<!-- user dropdown starts -->
+					<div class="btn-group pull-right">
+						<button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+							<?php echo '<img height="30px" width="25px" src="data:image;base64,'.$_SESSION['image'].'" id="pro_pic"/></td>'; ?><span class="hidden-sm hidden-xs"> <?php echo "$utype3." ;echo " $utype1" ;echo " $utype2"; ?></span>
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu">
+							<li><a href="../user/editpage.php"><i class="glyphicon glyphicon-file"> Profile</i></a></li>
+							<li class="divider"></li>
+							<li><a href="../Hostel/HMS/lib/logout.php"><i class="glyphicon glyphicon-off"> Logout</i></a></li>
+						</ul>
+					</div>
+					<!-- user dropdown ends -->
+					<!-- topbar ends -->
 				</div>
 			</nav>
 			<div>
@@ -197,17 +188,18 @@ $utype1=$_SESSION['usertype3'];
 					<li>
 						<a href="index_multi.php" class=" glyphicon glyphicon-home"> Home </a>
 					</li>
-					
+					<li class="pull-right">
+						<a href="help.pdf">
+							<i class="glyphicon glyphicon-question-sign" title="Help"></i>
+						</a>
+					</li>
 				</ul>
 			</div>
 			<div class="main-panel">
-            
 					<!-- content starts -->
 					
 <?php
-
  require_once('../Hostel/HMS/lib/session.php');
-
         $position=$_SESSION['position1'];
  
 	

@@ -1,6 +1,15 @@
  <?php
 
- include('../../Hostel/HMS/lib/session.php'); // Includes Login Script
+ include('../../Hostel/HMS/lib/session.php'); 
+ if((!isset($_SESSION['Loged_User']))) {
+	 header('location:../../UMS/UMSlogin.php');
+}
+else
+{
+	$id=$_SESSION['id'];
+	
+	
+}
  ?>  
 <!DOCTYPE html>
 <html lang="en">
@@ -246,10 +255,20 @@
 													<p>My Profile</p>
 												</a>
 												</li>
+												
+												
+												<li class="">
+												<a href="Changepassword.php">
+													<i class="ti-lock"></i>
+													<p>Change Password</p>
+												</a>
+												</li>
+												
+												
 											</li>
 											<li>
 												<a href="../../Hostel/HMS/lib/logout.php">
-													<i class="ti-text"></i>
+													<i class="ti-power-off"></i>
 													<p>LogOut</p>
 												</a>
 											</li>
@@ -488,7 +507,7 @@ $query_row=mysql_fetch_assoc($query);
 	<?php
 	}
 	?>
-
+<!--- Removed by Shehan==================================================================================
 						
 						 <div class="row">
                             
@@ -570,7 +589,7 @@ $query_row=mysql_fetch_assoc($query);
 									</script>
 
 							   
-
+-->
                         
                              <div class="row">
                             <div class="form-group">
@@ -1076,7 +1095,7 @@ else
 						<?php
 								 if(($_SESSION['res']!="student")||(!in_array("student",$_SESSION['position1'])))
 									{
-										echo'<p id="button" style="display:none"><button type="submit" id="update" class="center btn btn-primary glyphicon glyphicon-repeat" value="upload"> UPDATE</button></p>';
+										echo'<p id="button" ><button type="submit" id="update" class="center btn btn-primary glyphicon glyphicon-repeat" value="upload"> UPDATE</button></p>';
 									}
 									else
 									{
@@ -1084,6 +1103,7 @@ else
 								
 									}
 									?>
+									
 
                     </form>
 
@@ -1203,4 +1223,6 @@ else
 </div>
 </body>
 </html>
-<?php ?>
+<?php 
+
+?>

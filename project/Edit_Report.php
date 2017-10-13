@@ -1,6 +1,6 @@
 
 <?php
-
+error_reporting(0);
 include("../Hostel/HMS/lib/session.php");
  // if the session not yet started 
   //session_start();
@@ -13,14 +13,6 @@ include("../Hostel/HMS/lib/session.php");
         }
 		
 ?>
-
-
-
-
-
-
-
-
 
 
 
@@ -84,7 +76,7 @@ else
 	echo "not update";
 	
 ?>
-			?>
+			
 			
 			
 </table>

@@ -144,7 +144,7 @@ include('../connection.php');
 	else
 	{
 		
-		echo "<script type='text/javascript'>alert('Account Saved Succesfully');window.location = \"View_Profiles.php\"</script>";
+		echo "<script type='text/javascript'>alert('Account Saved Succesfully');window.location = \"CreateAccounts.php\"</script>";
 	
 		
 	}

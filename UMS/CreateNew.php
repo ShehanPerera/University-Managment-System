@@ -86,7 +86,7 @@
 
 <body>
 <script type="text/javascript">
-function 
+
 		function checkUserfun()
 		{
 			
@@ -181,7 +181,7 @@ function
 </script>
 
 	<!-- left menu starts -->
-        <div class="wrapper">
+       <div class="wrapper">
         <div class="sidebar" data-background-color="black" data-active-color="warning">
 
             <div class="sidebar-wrapper">
@@ -212,12 +212,16 @@ function
 								return i;
 							}
 						</script>
+						<center>
 						<h1 class="animated fadeInLeft">
 							<body onload = "startTime()">
 								<div id = "txt"></div>
 							</body>
 						</h1>
-						<h5 class="animated fadeInLeft"><?php echo date("j/m/Y")?></h5>
+						</center>
+						<center>
+						<h3 class="animated fadeInLeft" ><font color='white'><?php echo date("j/m/Y")?></font></h3>
+						</center>
                     </li>
 				</ul>
                 <ul class="nav">
@@ -240,12 +244,7 @@ function
 													<p>(if once create account)</p>
 												</a>
 											</li>
-											<li class="">
-												<a href="help.pdf">
-													<i class="glyphicon glyphicon-question-sign"></i>
-													<p>Help</p>
-												</a>
-											</li>
+											
 											
 											<li>
 												<a href="http://www.jfn.ac.lk/">
@@ -258,6 +257,7 @@ function
 										</ul>
             </div>
         </div>
+		
         <!--/span-->
         <!-- left menu ends -->
 		<div class="main-panel">
@@ -290,6 +290,12 @@ function
            		 <li>
                		 <a href="CreateNew.php" class=" glyphicon glyphicon-user" > Create New Account</a>
             	</li>
+				
+				<li class="pull-right">
+						<a href="help.pdf">
+							<i class="glyphicon glyphicon-question-sign" title="Help"></i>
+						</a>
+					</li>
         	</ul>
    		 </div>
 		</div>

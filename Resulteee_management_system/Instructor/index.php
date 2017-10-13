@@ -77,26 +77,17 @@ $inst= mysqli_fetch_array($q);
 		$img=$arr[2];
 		$path="img/".$staff."/".$img;
 		?>
-		<li><a href="index.php?option=upload_profile_pic" style="color:#FF0000"><img style="border-radius:20px" src="<?php echo $path;?>" width="30"/></a></li>
-		<?php 
-		
-		?>
-		<?php
-		
-				
-		 echo'  <li><a href="../../UMS/index_R_S.php" style="color:#FFFFFF">UMS</a></li>';
-			
-			?>
-			 
+		 
 	
 		<li><a><?php echo '<img height="30px" width="25px" src="data:image;base64,'.$_SESSION['image'].'" id="pro_pic"/></td>'; ?></a></li>
 		<?php 
 		}else{
 		?>
+		<li><a><?php echo '<img height="30px" width="25px" src="data:image;base64,'.$_SESSION['image'].'" id="pro_pic"/></td>'; ?></a></li>
 		
-		<li><a href="index.php?option=upload_profile_pic" style="color:#FFFFFF"><img src="img/user.png" style="border-radius:20px" width="30" height="30"/></a></li>
-            <?php } ?>
-			
+		
+		    <?php } ?>
+			<li><a href="../../UMS/index_R_S.php" style="color:#FFFFFF">UMS</a></li>;
             <li><a href="logout.php" style="color:#FFFFFF"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
           </ul>
          

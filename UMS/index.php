@@ -146,14 +146,6 @@ else
 }
  
  ?>
-					
-                   
-                   <li class="">
-												<a href="help.pdf">
-													<i class="glyphicon glyphicon-question-sign"></i>
-													<p>Help</p>
-												</a>
-											</li>
                    
                     <li>
                         <a href="http://www.jfn.ac.lk/">
@@ -169,17 +161,11 @@ else
 		<div class="main-panel">
             <nav class="navbar navbar-default">
                 <div class="container-fluid">
-						<!-- topbar starts -->
-								<button type="button" class="navbar-toggle pull-left animated flip">
-									<span class="sr-only">Toggle navigation</span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-								</button>
-								<div class="pull-left">
-							<h4>University Management System</h4>
-						</div>
-						<!-- topbar ends -->
+					<!-- topbar starts -->
+					<div class="pull-left">
+						<h4>University Management System</h4>
+					</div>
+					<!-- topbar ends -->
 				</div>
 			</nav>
 			<div>
@@ -187,7 +173,11 @@ else
 					<li>
 						<a href="index.php" class=" glyphicon glyphicon-home"> Home </a>
 					</li>
-					
+					<li class="pull-right">
+						<a href="help.pdf">
+							<i class="glyphicon glyphicon-question-sign" title="Help"></i>	
+						</a>
+					</li>
 				</ul>
 			</div>
 			<div class="main-panel">
@@ -272,4 +262,3 @@ else
 		</div>
 </body>
 </html>
-<style>

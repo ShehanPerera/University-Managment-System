@@ -1,7 +1,9 @@
 
 <?php
 include('../connection.php');
+
 $user_id=$_REQUEST['user_id'];
+
 
 			//gayan
 			$resultid=mysql_query("SELECT * FROM user where user_id = '$user_id'" ) or die(mysql_error());
@@ -84,6 +86,7 @@ $user_id=$_REQUEST['user_id'];
 	            $result =mysql_query($query);
 	             if($result)
 	             {
+					 echo $user_id;
 					
 					echo "<script type='text/javascript'>alert('Delete successfully');window.location =\"View_Profiles.php\"</script>";
 	             	

@@ -124,7 +124,7 @@ if((!isset($_SESSION['Loged_User']))||(($_SESSION['res']!="radmin")&&(!in_array(
 							<div id = "txt"></div>
 						</body>
 					</h1>
-						<p class="animated fadeInRight">Sat,October 1st 2029</p>
+						<h5 class="animated fadeInLeft"><?php echo date("j/m/Y")?></h5>
                 </li>
 			</ul>
             <ul class="nav">
@@ -261,18 +261,13 @@ $query ="SELECT * FROM user WHERE (position ='head' ) ORDER BY user_id ASC";
 		<th width="1">Image</th>
         <th width="1">UserName</th>
 		<th width="10">E-Mail</th>
-        <th width="1">Contact</th>
-		<th width="1">Position</th>
-		<th width="1">Dept</th>
-		<th width="1">Reg_No</th>
-		<th width="1" hidden>IndexNo</th>
-		<th width="1">Course</th>
-		<th width="1">Level</th>
-		<th width="1">Combination</th>
-		<th width="1">Special</th>
-		<th width="1">accept </th>
-		<th width="1" hidden>accepthide </th>
-		<th >action </th>
+        <th width="10">Contact</th>
+		<th width="10">Position</th>
+		<th width="10">Dept</th>
+		
+		<th width="10">accept </th>
+		<th width="10" hidden>accepthide </th>
+		<th width="10">action </th>
        
     </tr>
     </thead>
@@ -293,12 +288,6 @@ $query ="SELECT * FROM user WHERE (position ='head' ) ORDER BY user_id ASC";
 					echo '<td>'.$query_row['contact'].'<input hidden type="text" value ="'.$query_row['contact'].'"  name ="contact'.$i.'"/></td>';
 					echo '<td>'.$query_row['position'].'<input hidden type="text" value ="'.$query_row['position'].'"  name ="position'.$i.'"/></td>';
 					echo '<td width="1">'.$query_row['department'].'<input size="1" hidden type="text" value ="'.$query_row['department'].'"  name ="department'.$i.'"/></td>';
-					echo '<td width="3">'.$query_row['reg_no'].'<input size="6" type="text" hidden value ="'.$query_row['reg_no'].'"  name ="reg_no'.$i.'"/></td>';
-					echo '<td width="1" hidden>'.$query_row['reg_no'].'<input size="3" type="text" value ="'.$query_row['reg_no'].'"  name ="reg_no2'.$i.'"/></td>';
-					echo '<td width="1" >'.$query_row['course'].'<input size="3" hidden type="text" value ="'.$query_row['course'].'"  name ="course2'.$i.'"/></td>';
-					echo '<td width="1" >'.$query_row['level'].'<input size="3" type="text"  hidden value ="'.$query_row['level'].'"  name ="level2'.$i.'"/></td>';
-					echo '<td width="1" >'.$query_row['combination'].'<input size="3" type="text" hidden value ="'.$query_row['combination'].'"  name ="combination2'.$i.'"/></td>';
-					echo '<td width="1" >'.$query_row['special'].'<input size="3" type="text" hidden value ="'.$query_row['special'].'"  name ="special2'.$i.'"/></td>';
 					$acceptc=$query_row['accept'];
 									if($acceptc=='true')
 									{

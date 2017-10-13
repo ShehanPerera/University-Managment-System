@@ -56,7 +56,7 @@ $stu= mysqli_fetch_array($q);
 		</div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-		<li><a  href="../../UMS/index_R_S.php" style="color:#337ab7"> UMS</a></li>
+
 		<?php 
 		if(file_exists("img/$staff"))
 		{
@@ -64,16 +64,16 @@ $stu= mysqli_fetch_array($q);
 		$img=$arr[2];
 		$path="img/".$staff."/".$img;
 		?>
-		<li><a title="Upload Profile pic" href="#" style="color:#FFFFFF"><?php echo '<img height="30px" width="25px" src="data:image;base64,'.$_SESSION['image'].'" id="pro_pic"/></td>'; ?></a></li>
 		<?php 
 		}else{
 		?>
 		
-		<li><a title="Upload Profile pic" href="index.php?option=upload_profile_pic" style="color:#FFFFFF"><img src="img/user.png" style="border-radius:20px" width="30" /></a></li>
-            <?php } ?>
+		   <?php } ?>
 		
-			
-			<li><a  href="logout.php" style="color:#337ab7"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+			<li><?php echo '<img height="30px" width="25px" src="data:image;base64,'.$_SESSION['image'].'" id="pro_pic"/></td>'; ?></a></li>
+		<li><a  href="../../UMS/index_R_S.php" style="color:#FFFFFF"> UMS</a></li>
+		
+			<li><a  href="logout.php" style="color:#FFFFFF"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
           </ul>
          
         </div>
