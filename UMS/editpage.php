@@ -19,8 +19,8 @@
     <title>University Management System</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Charisma, a fully featured, responsive, HTML5, Bootstrap admin template.">
-   <meta name="template" content="Muhammad Usman">
-	 <meta name="authors" content="shehan Perera/Anjula/Gayan/Kirikaran">
+   <meta name="template" content="Muhammad Usman">-->
+	 <meta name="authors" content="shehan Perera/Anjula/Gayan/Kirikaran/Shashikala">
 
     <!-- The styles -->
    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
@@ -196,11 +196,14 @@
 								return i;
 							}
 						</script>
+						<?php  $user_id=$_REQUEST['user_id']; ?>
+						
+						
 						<h1 class="animated fadeInLeft">
 							<body onload = "startTime()">
 								<div id = "txt"></div>
 									</body>
-										</h1>
+						</h1>
 										<h3 class="animated fadeInLeft" ><font color='white'><?php echo date("j/m/Y")?></font></h3>
 									</li>
 										</ul>
@@ -223,12 +226,16 @@
 													<p>My Profile</p>
 												</a>
 											</li>
-											<li class="">
-												<a href="help.pdf">
-													<i class="glyphicon glyphicon-question-sign"></i>
-													<p>Help</p>
+											<?php
+											
+											echo' <li class="">
+												<a href="Changepassword.php?user_id='.$user_id.'">
+													<i class="glyphicon glyphicon-lock"></i>
+													<p>Change Password</p>
 												</a>
-											</li>
+											</li>';
+											?>
+											
 											<li>
 												<a href="http://www.jfn.ac.lk/">
 													<i class="ti-view-list-alt"></i>
@@ -283,6 +290,12 @@
            		 <li>
                		 <a href="editpage.php"><i class="glyphicon glyphicon-user"> Edit Account</i></a>
             	</li>
+				
+				<li class="pull-right">
+						<a href="help.pdf">
+							<i class="glyphicon glyphicon-question-sign" title="Help"></i>
+						</a>
+					</li>
         	</ul>
    		 </div>
 
@@ -445,7 +458,7 @@ $query_row=mysql_fetch_assoc($query);
                                     required   placeholder="Enter A Username" name="user_name" onkeyup="checkUserfun()" value="<?php echo $query_row['username']?>">
                             </div>
                         </div>
-						 <div class="row">
+<!--						 <div class="row">
                             
                                 <div class="form-group">
                                     <label for="password">Password</label>
@@ -516,7 +529,9 @@ $query_row=mysql_fetch_assoc($query);
                             
                        	 </div>
 
-                        
+   -->          
+						
+							
                              <div class="row">
                             <div class="form-group">
                                 <label for="cpos1">Current Positions</label><br>
@@ -967,7 +982,8 @@ else
          							</div>
 								</div>
 						</div>
-							<p id="button" style="display:none"><button type="submit" class="center btn btn-primary glyphicon glyphicon-repeat" value="upload"> UPDATE</button></p>
+							<button type="submit" class="center btn btn-primary glyphicon glyphicon-repeat" value="upload"> UPDATE</button></p>
+							
 
                     </form>
 

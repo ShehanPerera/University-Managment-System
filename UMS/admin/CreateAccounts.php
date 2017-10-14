@@ -230,12 +230,16 @@ if((!isset($_SESSION['Loged_User'])) ||(($_SESSION['res']!="radmin")&&(!in_array
 							return i;
 						}
 					</script>
-					<h1 class="animated fadeInLeft">
-						<body onload = "startTime()">
-							<div id = "txt"></div>
-						</body>
-					</h1>
-					<h5 class="animated fadeInLeft"><?php echo date("j/m/Y")?></h5>
+					<center>
+						<h1 class="animated fadeInLeft">
+							<body onload = "startTime()">
+								<div id = "txt"></div>
+							</body>
+						</h1>
+						</center>
+						<center>
+						<h3 class="animated fadeInLeft" ><font color='white'><?php echo date("j/m/Y")?></font></h3>
+					</center>
                 </li>
 			</ul>
             <ul class="nav">
@@ -386,7 +390,7 @@ if((!isset($_SESSION['Loged_User'])) ||(($_SESSION['res']!="radmin")&&(!in_array
 <div class="ch-container">
 
                 <div>
-        	<ul class="breadcrumb">
+        	<ul cass="breadcrumb">
            		<li><?php if(($_SESSION['res']=="mainadmin")||(in_array("mainadmin",$_SESSION['position1'])))
  {
 		echo'<li ><a href="../index_multi.php" class=" glyphicon glyphicon-home"><span>Home</span></a>
@@ -428,6 +432,13 @@ if((!isset($_SESSION['Loged_User'])) ||(($_SESSION['res']!="radmin")&&(!in_array
            		 <li>
                		 <a href="CreateAccounts.php" class="glyphicon glyphicon-user">Create New User Account</a>
             	</li>
+
+
+            	<li class="pull-right">
+						<a href="help.pdf">
+							<i class="glyphicon glyphicon-question-sign" title="Help"></i>	
+						</a>
+				</li>
         	</ul>
    		 </div>
 

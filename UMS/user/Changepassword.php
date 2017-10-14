@@ -234,13 +234,16 @@ else
 								return i;
 							}
 						</script>
+						<center>
 						<h1 class="animated fadeInLeft">
 							<body onload = "startTime()">
 								<div id = "txt"></div>
-									</body>
-										</h1>
-										<h5 class="animated fadeInLeft"><?php echo date("j/m/Y")?></h5>
-									</li>
+							</body>
+						</h1>
+						</center>
+						<center>
+						<h3 class="animated fadeInLeft" ><font color='white'><?php echo date("j/m/Y")?></font></h3>
+</center>			</li>
 										</ul>
 										 <ul class="nav">
 											<li class="">
@@ -366,6 +369,12 @@ $query_row=mysql_fetch_assoc($query);
            		 <li>
                		 <a href="editpage.php"><i class="glyphicon glyphicon-user"> Edit Account</i></a>
             	</li>
+				
+				<li class="pull-right">
+						<a href="help.pdf">
+							<i class="glyphicon glyphicon-question-sign" title="Help"></i>	
+						</a>
+</li>
         	</ul>
    		 </div>
 

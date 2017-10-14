@@ -130,12 +130,16 @@ if((!isset($_SESSION['Loged_User'])) ||(($_SESSION['res']!="radmin")&&(!in_array
 										return i;
 									}
 								</script>
-								<h1 class="animated fadeInLeft">
-									<body onload = "startTime()">
-										<div id = "txt"></div>
-									</body>
-								</h1>
-								<h5 class="animated fadeInLeft"><?php echo date("j/m/Y")?></h5>
+		<center>
+						<h1 class="animated fadeInLeft">
+							<body onload = "startTime()">
+								<div id = "txt"></div>
+							</body>
+						</h1>
+						</center>
+						<center>
+						<h3 class="animated fadeInLeft" ><font color='white'><?php echo date("j/m/Y")?></font></h3>
+		</center>
 							</li>
 						
 						
@@ -314,6 +318,14 @@ if((!isset($_SESSION['Loged_User'])) ||(($_SESSION['res']!="radmin")&&(!in_array
 							<li>
 								<a href="New_Profiles.php" class=" glyphicon glyphicon-user">New User Accounts</a>
 							</li>
+
+
+
+				<li class="pull-right">
+						<a href="help.pdf">
+							<i class="glyphicon glyphicon-question-sign" title="Help"></i>	
+						</a>
+				</li>
 						</ul>
 					</div>
 					<div class="row">

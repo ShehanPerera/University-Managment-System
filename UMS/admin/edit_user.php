@@ -488,7 +488,17 @@ error_reporting(0);
             $query=mysql_query($test);
             $query_row=mysql_fetch_assoc($query);
 		}
+		else if(!empty($_REQUEST['user_id']))
+		{
+			$id=$_REQUEST['user_id'];
+			 include("../connection.php");
+           
+			 $test="select * from user where (user_id='".$id."' || username='".$id."' || email='".$id."' || contact='".$id."' || first_name='".$id."' || last_name='".$id."' || nic='".$id."'|| reg_no='".$id."') ";
+            $query=mysql_query($test);
+            $query_row=mysql_fetch_assoc($query);
+		}
 		else{ $query_row=0;}
+		
         
              					
 //<!--gayan--!>					
@@ -1036,7 +1046,7 @@ echo'
 									echo'
 									<p id="HODchecked2" >
 									To change here remove titck and tick again </br>
-									Reg
+									
 									Department:<label>'.$query_row['department'].'</label><br>
 									</p>';
 									echo'<p id="HODchecked" style="display:none">
@@ -1046,7 +1056,7 @@ echo'
 									else
 									{
 									echo'<p id="HODchecked" style="display:none">
-									Department:<label><input type="text" name="department1" value="" placeholder="Department"></label><br>
+									Department:<label><input type="text" name="department1" value="'.$query_row['department'].'" placeholder="Department"></label><br>
 									</p>';
 									}
 									echo'
@@ -1238,12 +1248,13 @@ echo'
          							</div>
 								</div>
 						</div>
-							<p id="button" ><button type="submit" class="center btn btn-primary glyphicon glyphicon-repeat" value="upload"> UPDATE</button></p>
-
+							<p id="button" ><button type="submit" class="center btn btn-primary glyphicon glyphicon-repeat"  id="update" value="upload" name="update"> UPDATE</button></p>
+							<button type="submit" class="center btn btn-danger glyphicon glyphicon-trash" value="delete" id="deletebtn" name="deletebtn"> DELETE</button></p>
+				
                     </form>
 
 
-               
+      
             
         </div>
   

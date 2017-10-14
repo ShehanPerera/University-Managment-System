@@ -177,12 +177,16 @@ if((!isset($_SESSION['Loged_User'])) ||(($_SESSION['res']!="radmin")&&(!in_array
 							return i;
 						}
 					</script>
-					<h1 class="animated fadeInLeft">
-						<body onload = "startTime()">
-							<div id = "txt"></div>
-						</body>
-					</h1>
-					<h4 class="animated fadeInLeft"><?php echo date("j/m/Y")?></h4>
+					<center>
+						<h1 class="animated fadeInLeft">
+							<body onload = "startTime()">
+								<div id = "txt"></div>
+							</body>
+						</h1>
+						</center>
+						<center>
+						<h3 class="animated fadeInLeft" ><font color='white'><?php echo date("j/m/Y")?></font></h3>
+					</center>
                 </li>
 			</ul>
             <ul class="nav">
