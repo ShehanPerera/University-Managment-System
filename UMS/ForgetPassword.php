@@ -110,16 +110,12 @@ error_reporting(0);
 								return i;
 							}
 						</script>
-						<center>
 						<h1 class="animated fadeInLeft">
 							<body onload = "startTime()">
 								<div id = "txt"></div>
 							</body>
 						</h1>
-						</center>
-						<center>
-						<h3 class="animated fadeInLeft" ><font color='white'><?php echo date("j/m/Y")?></font></h3>
-						</center>
+						<h5 class="animated fadeInLeft"><?php echo date("j/m/Y")?></h5>
                     </li>
 				</ul>
                 <ul class="nav">

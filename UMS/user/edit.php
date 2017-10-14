@@ -243,18 +243,31 @@ if(!empty($_POST['image']))
 	{
 	$image=file_get_contents($image);
 	$image=base64_encode($image);
-	
-	
+	if(!empty($_POST['password']))
+	{
+		$password=md5($_POST['password']);
+	$sql = "UPDATE user SET title='$title',action='$action',username='$username',password='$password',image='$image',first_name='$fname',last_name='$lname',nic='$nic',email='$emails',department='$department',level='$level',special='$special',combination='$combination',hostelid='$hostelid' where user_id='$id'";
+	}
+	else
+	{
 	$sql = "UPDATE user SET title='$title',action='$action',username='$username',image='$image',first_name='$fname',last_name='$lname',nic='$nic',email='$emails',department='$department',level='$level',special='$special',combination='$combination',hostelid='$hostelid' where user_id='$id'";
 	
 	}
 	}
+	}
 else
 {
-
+if(!empty($_POST['password']))
+	{
+				
+		$password=md5($_POST['password']);
+	$sql = "UPDATE user SET title='$title',action='$action',username='$username',password='$password',first_name='$fname',last_name='$lname',nic='$nic',email='$emails',department='$department',level='$level',special='$special',combination='$combination',hostelid='$hostelid1' where user_id='$id'";
+	}
+	else
+	{
 	$sql = "UPDATE user SET title='$title',action='$action',username='$username', first_name='$fname',last_name='$lname',nic='$nic',email='$emails',department='$department',level='$level',special='$special',combination='$combination',hostelid='$hostelid1' where user_id='$id'";
 		
-			
+	}		
 }
 	
 	if(!mysql_query($sql))

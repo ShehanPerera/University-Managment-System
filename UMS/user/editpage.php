@@ -1,15 +1,6 @@
  <?php
 
- include('../../Hostel/HMS/lib/session.php'); 
- if((!isset($_SESSION['Loged_User']))) {
-	 header('location:../../UMS/UMSlogin.php');
-}
-else
-{
-	$id=$_SESSION['id'];
-	
-	
-}
+ include('../../Hostel/HMS/lib/session.php'); // Includes Login Script
  ?>  
 <!DOCTYPE html>
 <html lang="en">
@@ -255,20 +246,10 @@ else
 													<p>My Profile</p>
 												</a>
 												</li>
-												
-												
-												<li class="">
-												<a href="Changepassword.php">
-													<i class="ti-lock"></i>
-													<p>Change Password</p>
-												</a>
-												</li>
-												
-												
 											</li>
 											<li>
 												<a href="../../Hostel/HMS/lib/logout.php">
-													<i class="ti-power-off"></i>
+													<i class="ti-text"></i>
 													<p>LogOut</p>
 												</a>
 											</li>
@@ -507,7 +488,7 @@ $query_row=mysql_fetch_assoc($query);
 	<?php
 	}
 	?>
-<!--- Removed by Shehan==================================================================================
+
 						
 						 <div class="row">
                             
@@ -589,7 +570,7 @@ $query_row=mysql_fetch_assoc($query);
 									</script>
 
 							   
--->
+
                         
                              <div class="row">
                             <div class="form-group">
@@ -1103,7 +1084,6 @@ else
 								
 									}
 									?>
-									
 
                     </form>
 
@@ -1223,6 +1203,4 @@ else
 </div>
 </body>
 </html>
-<?php 
-
-?>
+<?php ?>

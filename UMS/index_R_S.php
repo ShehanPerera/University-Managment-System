@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <?php
 include('../Hostel/HMS/lib/session.php');
+
  if((!isset($_SESSION['Loged_User']))||($_SESSION['res']!="head")&&($_SESSION['res']!="student")&&($_SESSION['res']!="radmin")&&(!in_array("radmin",$_SESSION['position1']))&&(!in_array("head",$_SESSION['position1']))&&(!in_array("student",$_SESSION['position1'])))
          {
          header('location:UMSlogin.php');
         }
+
  $utype1=$_SESSION['usertype3'];
  $utype2=$_SESSION['usertype1'];
  $utype3=$_SESSION['usertype2'];
@@ -68,7 +70,7 @@ include('../Hostel/HMS/lib/session.php');
 
             <div class="sidebar-wrapper">
 				<div class="logo">
-                <a href="index_multi.php" class="simple-text">
+                <a href="index_R_S.php" class="simple-text">
 					<img src="logo.png" alt = "Logo" style="width:80px;height:80px;">
                     <h2>UMS</h2>
                 </a>
@@ -256,3 +258,4 @@ include('../Hostel/HMS/lib/session.php');
 		</div>
 </body>
 </html>
+<style>

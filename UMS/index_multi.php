@@ -9,6 +9,7 @@ if((!isset($_SESSION['Loged_User'])))
 $utype1=$_SESSION['usertype3'];
  $utype2=$_SESSION['usertype1'];
  $utype3=$_SESSION['usertype2'];
+
 ?>
 <html lang="en">
 <head>
@@ -142,7 +143,12 @@ $utype1=$_SESSION['usertype3'];
 					<?php
 					}
 					?> 
-					
+					 <li class="">
+												<a href="help.pdf">
+													<i class="glyphicon glyphicon-question-sign"></i>
+													<p>Help</p>
+												</a>
+											</li>
 											<li>
                         <a href="http://www.jfn.ac.lk/">
                             <i class="ti-view-list-alt"></i>
@@ -199,7 +205,9 @@ $utype1=$_SESSION['usertype3'];
 					<!-- content starts -->
 					
 <?php
+
  require_once('../Hostel/HMS/lib/session.php');
+
         $position=$_SESSION['position1'];
  
 	
