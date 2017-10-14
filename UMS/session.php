@@ -1,6 +1,7 @@
 <?php
-	include ('../../Hostel/HMS/lib/STD_Con.php');
+	include 'STD_Con.php';
 	//sesson start
+	// edited by gayan ---------
 	$hosadmin=true;
 	session_start();
 	if(!empty($_SESSION['User']))
@@ -49,6 +50,16 @@
 		$_SESSION['type1']="madmin";
 		
 	} 
+	else if(in_array("mainadmin",$position))
+	{
+		$_SESSION['type1']="mainadmin";
+		
+	} 
+	else if(in_array("student",$position))
+	{
+		$_SESSION['type1']="student";
+		
+	} 
 	//print_r($position);
 	//echo $_SESSION['type1'];
 	
@@ -73,25 +84,17 @@
 	//$_SESSION['type1'] =$ses_type;
 	// $_SESSION['user_id'] = $ses_id;
 	
-	if($_SESSION['res']=='warden')
-	{
-		$ses_id= $_SESSION['id'];
-		$sql_hos="SELECT * FROM hostel_staff WHERE warden_id='$ses_id' OR subwarden_id='$ses_id';"; 
-		$ses_result_hos = $conn->query($sql_hos);
-		$hos_row=$ses_result_hos->fetch_assoc();
-		$hos=$hos_row['hostel_id'];
-		$_SESSION['hostel_id']=$hos;
-	}
+	
 	// =============================================================================================================================================================================================================================================================================================================================================================
 	include('connection.php');
 	 $ses_sql1 = "SELECT * FROM user WHERE username = '$logedUser'";
 	
 
-	$ses_result1 =mysql_query( $ses_sql1);
+	$ses_result1 = $conn->query($ses_sql1);
  
  
 
-	 $ses_row1 = mysql_fetch_array($ses_result1);
+	 $ses_row1 = $ses_result1->fetch_assoc();
 	$id=$ses_row1['user_id']; 
 	$_SESSION['id']=$id;
 	// $ses_name = $ses_row['warden'];
@@ -100,26 +103,39 @@
 	 $ses_type1 = $ses_row1['first_name'];
 	 $ses_type2 = $ses_row1['last_name'];
 	 $ses_type3 = $ses_row1['title'];
-	  $_SESSION['emails']= $ses_row1['email'];
-	 $_SESSION['usertype3']=$ses_type1;
-	 $_SESSION['usertype1']=$ses_type2;
-	$_SESSION['usertype2']=$ses_type3;
-	$res=$ses_row1['position'];
+	 $_SESSION['usertype3']=$ses_type1;  //first_name
+	 $_SESSION['usertype1']=$ses_type2; // last_name
+	$_SESSION['usertype2']=$ses_type3; // title
+	$res=$ses_row1['position']; // position
 	$_SESSION['position']=$res;
 	$_SESSION['accept']=$ses_row1['accept'];
 	$_SESSION['image']=$ses_row1['image'];
+	$_SESSION['emails']=$ses_row1['email'];
 	
 		 $ses_sql2 = "SELECT * FROM type WHERE position = '$res'";
 		
-		$ses_result2 =mysql_query( $ses_sql2);
+		$ses_result2 = $conn->query($ses_sql2);
 
-		 $ses_row2 = mysql_fetch_array($ses_result2);
+		 $ses_row2 = $ses_result2->fetch_assoc();
 		 
 		 $ses_pos = $ses_row2['responsible'];
 		 $_SESSION['res']= $ses_pos;
 		// echo $ses_conform;
-	
-	//$conn->close();
+		
+		
+		//for HMS----- Gayan
+		
+	include 'STD_Con.php';
+	 if((in_array("warden",$position))||(in_array("subwarden",$position)))
+	{
+		$ses_id= $_SESSION['id'];
+		$sql_hos="SELECT * FROM hostel_staff WHERE warden_id='$ses_id' OR subwarden_id='$ses_id';"; 
+		$ses_result_hos = $conn->query($sql_hos);
+		$hos_row=$ses_result_hos->fetch_assoc();
+		$hos=$hos_row['hostel_id'];
+		$_SESSION['hostel_id']=$hos;
+	} 
+	$conn->close();
 	// if(!isset($ses_conform))
 	// {
 	// 	$conn->close();
