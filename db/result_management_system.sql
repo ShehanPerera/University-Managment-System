@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 10, 2017 at 05:00 PM
+-- Generation Time: Oct 14, 2017 at 07:13 AM
 -- Server version: 10.1.13-MariaDB
 -- PHP Version: 5.6.21
 
@@ -169,12 +169,7 @@ CREATE TABLE `instructor` (
 --
 
 INSERT INTO `instructor` (`id`, `name`, `email`, `pass`, `dept`, `mob`, `status`) VALUES
-(2, 'meera', 'me@live.com', '202cb962ac59075b964b07152d234b70', 'csc', '0771384600', '0'),
 (5, 'Thabotharan Kathiravelu', 'thabotharan@gmail.com', '202cb962ac59075b964b07152d234b70', 'CSC', '0', '0'),
-(15, 'shehan', '12shehan@gmail.com', '202cb962ac59075b964b07152d234b70', 'csc', '0722955071', '0'),
-(153, 'Mr head&warden testing', 'HW@gmail.com', '50819f56bce608a52068dded80851b24', 'CSC', '0729550715', '1'),
-(146, 'Mr sdfgfdg sdgf', 'd@g.c', '50819f56bce608a52068dded80851b24', 'CSC', '', '1'),
-(30, 'Mr Phamasists testings', 'pha@gmail.coms', '', 'csscs', '0124475456', '1'),
 (149, 'Dr Amirthalingam Ramanan', 'a.ramana@jfn.ac.lk', 'baa2133a166353138c8a5ec66f17286e', 'CSC', '0212218194', '1'),
 (150, 'Mr S Selvarajan', 'selvarajan09@gmail.com', 'baa2133a166353138c8a5ec66f17286e', 'Maths', '0212218196', '1');
 
@@ -552,9 +547,12 @@ INSERT INTO `student` (`id`, `name`, `email`, `pass`, `Index_no`, `status`, `cou
 (11, 'Tharmini Thalayasingam', 'tharmini@gmail.com', '28742468abb3f5faeda64e4325cf4a5d', '', '0', ''),
 (12, 'Cheromi Ibo', 'cheromi@gmail.com', '5b5d5c2a3d81585f7ebd721451875a9a', '', '0', ''),
 (21, 'Thameera Tharmakulasingam', 'thamee@gmail.com', 'fcd99a327ddd404fdb9c187f3ed2c59c', 'S8780', '1', ''),
-(156, 'Mr janaka rajapaksha', 'janapbrajapaksha@gmail.com', 'baa2133a166353138c8a5ec66f17286e', 'S8724', '1', 'csc,amm'),
+(159, 'Mr Saditha Udayanga', 'tmsaditha@gmail.com', 'baa2133a166353138c8a5ec66f17286e', 'S9007', '1', 'csc'),
+(157, 'Mr Chamara Madhusanka', 'cmbandara31@gmail.com', 'baa2133a166353138c8a5ec66f17286e', 'S9001', '1', 'CSC'),
+(156, 'Mr janaka  rajapaksha', 'janapbrajapaksha@gmail.com', 'baa2133a166353138c8a5ec66f17286e', 'S8724', '1', 'csc,amm'),
 (152, 'Mr Gayan jayamal', 'jayamalgayan@gmail.com', 'a2a2970ab7771f426a20e0ac2c9aed71', 'S8747', '1', 'csc,pmm'),
-(151, 'Mr Kasun Suminda', 'kasunsuminda94@gmail.com', 'c69bfdd039d04e7392ec89dc70ae0d73', 'S8786', '1', 'csc');
+(151, 'Mr Kasun Suminda', 'kasunsuminda94@gmail.com', 'c69bfdd039d04e7392ec89dc70ae0d73', 'S8786', '1', 'csc'),
+(158, 'Mr dinusha  lakpriya', 'dinushalakrpiya5@gmail.com', 'baa2133a166353138c8a5ec66f17286e', 'S9010', '1', 'csc');
 
 --
 -- Indexes for dumped tables

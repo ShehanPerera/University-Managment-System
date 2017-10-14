@@ -205,13 +205,18 @@ else
                 <nav class="pull-left">
                     <ul>
                         <li>
-                            <a href="#">
+                            <a href="">
                                 Department of Computer Science
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="http://cscgroup08.blogspot.com">
                                 About Us
+                            </a>
+                        </li>
+			<li>
+                            <a href="https://github.com/ShehanPerera/University-Managment-System">
+                                GitHub
                             </a>
                         </li>
                     </ul>

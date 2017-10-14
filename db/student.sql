@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 10, 2017 at 04:59 PM
+-- Generation Time: Oct 14, 2017 at 07:13 AM
 -- Server version: 10.1.13-MariaDB
 -- PHP Version: 5.6.21
 
@@ -242,8 +242,7 @@ CREATE TABLE `hod` (
 
 INSERT INTO `hod` (`id`, `fname`, `lname`, `email`, `RegNo`, `password`, `department`, `gender`, `phone`) VALUES
 (149, 'Dr.Amirthalingam', 'Ramanan', 'a.ramana@jfn.ac.lk', '', 'baa2133a166353138c8a5ec66f17286e', 'CSC', '', 212218194),
-(150, 'Mr.S', 'Selvarajan', 'selvarajan09@gmail.com', '', 'baa2133a166353138c8a5ec66f17286e', 'Maths', '', 212218196),
-(153, 'Mr.head&warden', 'testing', 'HW@gmail.com', '', '50819f56bce608a52068dded80851b24', 'CSC', '', 0);
+(150, 'Mr.S', 'Selvarajan', 'selvarajan09@gmail.com', '', 'baa2133a166353138c8a5ec66f17286e', 'Maths', '', 212218196);
 
 -- --------------------------------------------------------
 
@@ -873,14 +872,13 @@ CREATE TABLE `student` (
 --
 
 INSERT INTO `student` (`id`, `RegNo`, `indNo`, `prefix`, `fname`, `lname`, `gender`, `address`, `email`, `phone`, `password`, `course`, `level`, `yearcd`, `subject_combination`, `special`) VALUES
-(1, '2011csc002', '79851', 'Miss', 'Thavaruby', 'Thankeswarar', 'Female', 'Address1', 'put.your.id@gmail.com', 771234567, '6bf733bb7f81e866306e9b5f012419cb', 'Computer_Science', '2G', '2015', 'Cs_', 'Y'),
-(2, '2011csc003', '79861', 'Miss', 'Arulini', 'Selvaratnam', 'Female', 'Address2', 'put.your.id@gmail.com', 771234567, '4158f6d19559955bae372bb00f6204e4', 'Computer_Science', '3G', '2015', 'Cs_', 'Y'),
-(3, '2011csc004', '7987', 'Mr', 'Gowshikan', 'Theiventhiramoorththi', 'Male', 'Address3', 'put.your.id@gmail.com', 771234567, 'e9287a53b94620249766921107fe70a3', 'Computer_Science', '3G', '2015', 'Cs_', 'Y'),
-(4, '2011csc005', '7988', 'Mr', 'Magure', 'Gamaaethige Nuwan Siriwardane', 'Male', 'Address4', 'put.your.id@gmail.com', 771234567, 'c02d0450cdd75ce7595f5eaeb5f041a3', 'Computer_Science', '3G', '2015', 'Cs_', 'Y'),
 (151, '2014SP142', 'S8786', 'Mr', 'kasun', 'suminda', 'Male', 'negombo', 'kasunsuminda94@gmail.com', 0, 'c69bfdd039d04e7392ec89dc70ae0d73', 'physical', '3M', '', '', 'Y'),
-(152, '2014SP115', 'S8747', 'Mr', 'Gayan', 'jayamal', 'Male', 'Matale', 'jayamalgayan@gmail.com', 767881226, 'a2a2970ab7771f426a20e0ac2c9aed71', 'physical', '3G', '', 'CSC', 'N'),
+(152, '2014SP115', 'S8747', 'Mr', 'Gayan', 'jayamal', 'Male', 'Matale', 'jayamalgayan@gmail.com', 767881226, 'a2a2970ab7771f426a20e0ac2c9aed71', 'physical', '3G', '', 'CSC', 'Y'),
 (155, '2014csc039', 'S9017', 'Mr', 'Ruchira Sachinthana', 'Manathunga', 'Male', '"Jayasewana",Kosgahathanna,Mirahawatta', 'rucsacman@gmail.com', 715531479, 'baa2133a166353138c8a5ec66f17286e', 'Computer Science', '3S', '', 'CSC', 'Y'),
-(156, '2014sp030', 'S8724', 'Mr', 'janaka', 'rajapaksha', 'Male', 'no 11 kokuvill jaffna', 'janapbrajapaksha@gmail.com', 715528313, 'baa2133a166353138c8a5ec66f17286e', 'physical', '3G', '', 'CSC', 'N');
+(156, '2014sp030', 'S8724', 'Mr', 'janaka ', 'rajapaksha', 'Male', 'no 11 kokuvill jaffna', 'janapbrajapaksha@gmail.com', 0, 'baa2133a166353138c8a5ec66f17286e', 'physical', '3G', '', 'CSC', 'N'),
+(157, '2014csc021', 'S9001', 'Mr', 'Chamara', 'Madhusanka', 'Male', 'Nikaweratiya', 'cmbandara31@gmail.com', 711588766, 'baa2133a166353138c8a5ec66f17286e', 'Computer Science', '3S', '', 'CSC', 'Y'),
+(158, '2014csc032', 'S9010', 'Mr', 'dinusha ', 'lakpriya', 'Male', 'pallama', 'dinushalakrpiya5@gmail.com', 719252909, 'baa2133a166353138c8a5ec66f17286e', 'Computer Science', '3s', '', 'csc', 'Y'),
+(159, '2014csc027', 'S9007', 'Mr', 'Saditha', 'Udayanga', 'Male', 'badulla', 'tmsaditha@gmail.com', 717893455, 'baa2133a166353138c8a5ec66f17286e', 'Computer Science', '3S', '', 'csc', 'Y');
 
 -- --------------------------------------------------------
 
@@ -1322,7 +1320,7 @@ ALTER TABLE `examdate`
 -- AUTO_INCREMENT for table `hod`
 --
 ALTER TABLE `hod`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=154;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=151;
 --
 -- AUTO_INCREMENT for table `log`
 --

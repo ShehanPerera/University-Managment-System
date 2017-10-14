@@ -272,9 +272,14 @@ $utype1=$_SESSION['usertype3'];
                                 Department of Computer Science
                             </a>
                         </li>
-                        <li>
-                            <a href="#">
+                         <li>
+                            <a href="http://cscgroup08.blogspot.com">
                                 About Us
+                            </a>
+                        </li>
+			<li>
+                            <a href="https://github.com/ShehanPerera/University-Managment-System">
+                                GitHub
                             </a>
                         </li>
                     </ul>
